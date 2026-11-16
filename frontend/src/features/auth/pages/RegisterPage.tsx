@@ -1,0 +1,9 @@
+import { useState } from 'react';
+import { useForm } from '@tanstack/react-form';
+import { useNavigate } from 'react-router-dom';
+import { api } from '../../../shared/api/axiosInstance';
+import { message } from '../../../shared/api/handleApiError';
+import { Button } from '../../../shared/ui/Button';
+import { FieldError } from '../../../shared/components/States';
+const labels={username:'Usuario',full_name:'Nombre completo',email:'Email',password:'Contraseña'};
+export default function RegisterPage(){const navigate=useNavigate(),[error,setError]=useState('');const form=useForm({defaultValues:{username:'',full_name:'',email:'',password:''},onSubmit:async({value})=>{setError('');try{await api.post('/auth/register',value);navigate('/login');}catch(e){setError(message(e));}}});return <section className="panel mx-auto max-w-lg"><p className="eyebrow">Un lugar en nuestra mesa</p><h1 className="title mt-3">Crear cuenta</h1><form className="mt-7 space-y-5" noValidate onSubmit={e=>{e.preventDefault();void form.handleSubmit();}}>{(['username','full_name','email','password'] as const).map(name=><form.Field key={name} name={name} validators={{onSubmit:({value})=>!value.trim()?'Completá este campo':name==='password'&&value.length<8?'La contraseña necesita al menos 8 caracteres':undefined}}>{f=><label className="form-label">{labels[name]}<input className="field" type={name==='password'?'password':name==='email'?'email':'text'} autoComplete={name==='password'?'new-password':name==='email'?'email':name==='full_name'?'name':'username'} value={f.state.value} onBlur={f.handleBlur} onChange={e=>f.handleChange(e.target.value)}/><FieldError errors={f.state.meta.errors}/></label>}</form.Field>)}{error&&<p className="error" role="alert">{error}</p>}<form.Subscribe selector={s=>s.isSubmitting}>{busy=><Button disabled={busy} type="submit">{busy?'Creando…':'Crear cuenta'}</Button>}</form.Subscribe></form></section>;}

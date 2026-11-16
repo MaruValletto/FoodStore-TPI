@@ -1,0 +1,15 @@
+import { BrowserRouter,Routes,Route,Link,Navigate } from 'react-router-dom';
+import { MainLayout } from '../shared/layout/MainLayout';
+import { ProtectedRoute } from './ProtectedRoute';
+import CatalogoPage from '../features/productos/pages/CatalogoPage';
+import LoginPage from '../features/auth/pages/LoginPage';
+import RegisterPage from '../features/auth/pages/RegisterPage';
+import CarritoPage from '../features/pedidos/pages/CarritoPage';
+import CheckoutPage from '../features/pedidos/pages/CheckoutPage';
+import MisPedidosPage from '../features/pedidos/pages/MisPedidosPage';
+import AdminResumenPage from '../features/pedidos/pages/AdminResumenPage';
+import AdminPedidosPage from '../features/pedidos/pages/AdminPedidosPage';
+import AdminCategoriasPage from '../features/categorias/pages/AdminCategoriasPage';
+import AdminProductosPage from '../features/productos/pages/AdminProductosPage';
+import AdminUsuariosPage from '../features/usuarios/pages/AdminUsuariosPage';
+export const AppRouter=()=> <BrowserRouter><Routes><Route element={<MainLayout/>}><Route path="/" element={<CatalogoPage/>}/><Route path="/login" element={<LoginPage/>}/><Route path="/register" element={<RegisterPage/>}/><Route path="/carrito" element={<CarritoPage/>}/><Route path="/unauthorized" element={<section className="panel"><h1 className="title">No tenés permiso para entrar acá.</h1><Link to="/">Volver al inicio</Link></section>}/><Route element={<ProtectedRoute/>}><Route path="/checkout" element={<CheckoutPage/>}/><Route path="/mis-pedidos" element={<MisPedidosPage/>}/></Route><Route element={<ProtectedRoute admin/>}><Route path="/admin" element={<Navigate to="/admin/resumen" replace/>}/><Route path="/admin/resumen" element={<AdminResumenPage/>}/><Route path="/admin/categorias" element={<AdminCategoriasPage/>}/><Route path="/admin/productos" element={<AdminProductosPage/>}/><Route path="/admin/pedidos" element={<AdminPedidosPage/>}/><Route path="/admin/usuarios" element={<AdminUsuariosPage/>}/></Route><Route path="*" element={<section className="panel"><h1 className="title">Esta página no está en el menú.</h1><Link to="/">Volver al inicio</Link></section>}/></Route></Routes></BrowserRouter>;

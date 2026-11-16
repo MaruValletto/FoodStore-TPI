@@ -1,0 +1,10 @@
+import axios from 'axios';
+export function message(error:unknown):string {
+  if(axios.isAxiosError(error)){
+    const detail:unknown=error.response?.data?.detail;
+    if(typeof detail==='string')return detail;
+    if(Array.isArray(detail))return detail.map((item:unknown)=>typeof item==='object'&&item!==null&&'msg' in item?String(item.msg):'Revisá los datos').join('. ');
+    if(!error.response)return 'No se pudo conectar. Comprobá que el backend esté encendido.';
+  }
+  return error instanceof Error?error.message:'Ocurrió un error. Volvé a intentarlo.';
+}

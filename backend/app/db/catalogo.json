@@ -1,0 +1,270 @@
+{
+  "categorias": [
+    {
+      "nombre": "Pizzas",
+      "descripcion": "Pizzas artesanales con masa fresca"
+    },
+    {
+      "nombre": "Hamburguesas",
+      "descripcion": "Hamburguesas gourmet con ingredientes frescos"
+    },
+    {
+      "nombre": "Bebidas",
+      "descripcion": "Gaseosas, jugos y bebidas frías"
+    },
+    {
+      "nombre": "Postres",
+      "descripcion": "Tortas, helados y dulces artesanales"
+    },
+    {
+      "nombre": "Empanadas",
+      "descripcion": "Empanadas horneadas y fritas de distintos sabores"
+    },
+    {
+      "nombre": "Ensaladas",
+      "descripcion": "Ensaladas frescas y saludables"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Pizza Muzzarella",
+      "descripcion": "Pizza clásica con salsa de tomate y muzzarella derretida",
+      "precio_base": "4500.00",
+      "imagen_url": [
+        "/media/pizza.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Pizzas"
+      ]
+    },
+    {
+      "nombre": "Pizza Napolitana",
+      "descripcion": "Pizza con rodajas de tomate fresco, ajo y albahaca",
+      "precio_base": "5200.00",
+      "imagen_url": [
+        "/media/napolitana.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Pizzas"
+      ]
+    },
+    {
+      "nombre": "Pizza Especial 4 Quesos",
+      "descripcion": "Muzzarella, provolone, roquefort y parmesano",
+      "precio_base": "6800.00",
+      "imagen_url": [
+        "/media/4quesos.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Pizzas"
+      ]
+    },
+    {
+      "nombre": "Pizza Fugazzeta",
+      "descripcion": "Pizza rellena de muzzarella con cebolla caramelizada",
+      "precio_base": "5500.00",
+      "imagen_url": [
+        "/media/fugazza.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Pizzas"
+      ]
+    },
+    {
+      "nombre": "Hamburguesa Clásica",
+      "descripcion": "Medallón de carne, lechuga, tomate, cebolla y mayo",
+      "precio_base": "3800.00",
+      "imagen_url": [
+        "/media/hamburguesa.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Hamburguesas"
+      ]
+    },
+    {
+      "nombre": "Hamburguesa BBQ Bacon",
+      "descripcion": "Doble medallón, bacon crocante y salsa barbacoa ahumada",
+      "precio_base": "5100.00",
+      "imagen_url": [
+        "/media/doblebq.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Hamburguesas"
+      ]
+    },
+    {
+      "nombre": "Hamburguesa Veggie",
+      "descripcion": "Medallón de lentejas y garbanzo, cheddar vegano y rúcula",
+      "precio_base": "4200.00",
+      "imagen_url": [
+        "/media/veggie.png"
+      ],
+      "disponible": false,
+      "categorias": [
+        "Hamburguesas"
+      ]
+    },
+    {
+      "nombre": "Hamburguesa Crispy Chicken",
+      "descripcion": "Pollo apanado crocante, coleslaw y salsa honey mustard",
+      "precio_base": "4600.00",
+      "imagen_url": [
+        "/media/hamburguesa_pollo.jpg"
+      ],
+      "disponible": false,
+      "categorias": [
+        "Hamburguesas"
+      ]
+    },
+    {
+      "nombre": "Coca-Cola 500ml",
+      "descripcion": "Gaseosa Coca-Cola fría, botella personal",
+      "precio_base": "1200.00",
+      "imagen_url": [
+        "/media/coca.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Bebidas"
+      ]
+    },
+    {
+      "nombre": "Jugo de Naranja Natural",
+      "descripcion": "Jugo exprimido en el momento, vaso 400ml",
+      "precio_base": "1800.00",
+      "imagen_url": [
+        "/media/jugo.png"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Bebidas"
+      ]
+    },
+    {
+      "nombre": "Agua Mineral 500ml",
+      "descripcion": "Agua mineral sin gas, botella personal",
+      "precio_base": "800.00",
+      "imagen_url": [
+        "/media/mineral.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Bebidas"
+      ]
+    },
+    {
+      "nombre": "Torta Rogel",
+      "descripcion": "Torta rogel tradicional con dulce de leche y merengue",
+      "precio_base": "3500.00",
+      "imagen_url": [
+        "/media/rogel.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Postres"
+      ]
+    },
+    {
+      "nombre": "Helado Artesanal 2 gustos",
+      "descripcion": "Pote de 250g, elegí 2 gustos entre 12 opciones",
+      "precio_base": "2800.00",
+      "imagen_url": [
+        "/media/helado.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Postres"
+      ]
+    },
+    {
+      "nombre": "Brownie con Helado",
+      "descripcion": "Brownie de chocolate tibio con bocha de vainilla",
+      "precio_base": "2200.00",
+      "imagen_url": [
+        "/media/brownie.jpg"
+      ],
+      "disponible": false,
+      "categorias": [
+        "Postres"
+      ]
+    },
+    {
+      "nombre": "Empanadas de Carne x6",
+      "descripcion": "Empanadas criollas de carne cortada a cuchillo, horneadas",
+      "precio_base": "3000.00",
+      "imagen_url": [
+        "/media/empanadas_carne.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Empanadas"
+      ]
+    },
+    {
+      "nombre": "Empanadas de Pollo x6",
+      "descripcion": "Empanadas de pollo con morrón y verdeo, horneadas",
+      "precio_base": "2800.00",
+      "imagen_url": [
+        "/media/empanadas_pollo.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Empanadas"
+      ]
+    },
+    {
+      "nombre": "Empanadas de Jamón y Queso x6",
+      "descripcion": "Empanadas fritas con jamón cocido y queso fundido",
+      "precio_base": "2500.00",
+      "imagen_url": [
+        "/media/empanadas_jyq.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Empanadas"
+      ]
+    },
+    {
+      "nombre": "Ensalada César",
+      "descripcion": "Lechuga romana, crutones, parmesano y aderezo césar",
+      "precio_base": "3200.00",
+      "imagen_url": [
+        "/media/caesar.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Ensaladas"
+      ]
+    },
+    {
+      "nombre": "Ensalada Caprese",
+      "descripcion": "Tomate, muzzarella fresca, albahaca y aceite de oliva",
+      "precio_base": "2900.00",
+      "imagen_url": [
+        "/media/caprese.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Ensaladas"
+      ]
+    },
+    {
+      "nombre": "Ensalada Mixta",
+      "descripcion": "Lechuga, tomate, zanahoria rallada y aceitunas",
+      "precio_base": "2400.00",
+      "imagen_url": [
+        "/media/mixta.jpg"
+      ],
+      "disponible": true,
+      "categorias": [
+        "Ensaladas"
+      ]
+    }
+  ]
+}
