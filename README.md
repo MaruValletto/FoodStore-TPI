@@ -37,6 +37,8 @@ python -m venv .venv
 Copy-Item .env.example .env
 ```
 
+Mantener `.env.example` con valores ficticios: es una plantilla pública que se incluye en GitHub y en el ZIP. Las claves reales se escriben únicamente en `.env`, que no se entrega.
+
 Editar `backend/.env`: reemplazar `TU_CLAVE` por la contraseña local y asignar a `SECRET_KEY` una clave aleatoria de al menos 32 caracteres. Puede generarse con:
 
 ```powershell
