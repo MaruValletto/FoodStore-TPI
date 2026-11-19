@@ -7,9 +7,9 @@ FoodStore reúne el trabajo desarrollado durante la materia en una aplicación d
 ## Enlaces de entrega
 
 - Repositorio público de GitHub: [MaruValletto/FoodStore-TPI](https://github.com/MaruValletto/FoodStore-TPI).
-- Video demostrativo de 10 a 15 minutos: **pendiente de grabación y publicación**.
+- Video demostrativo: [Presentación y demostración de FoodStore](https://www.youtube.com/watch?v=-p7PrQO0Eh8).
 
-El enlace del video debe completarse antes de presentar la entrega.
+El video debe poder reproducirse sin iniciar sesión; su duración y contenido deben cumplir lo indicado por la consigna.
 
 ## Requisitos
 
@@ -190,4 +190,4 @@ Desde `frontend`, `pnpm.cmd test` ejecuta ocho pruebas autónomas. Las dos prueb
 
 Un único ZIP debe contener `README.md`, `backend/` y `frontend/`. Se excluyen `.venv`, `node_modules`, archivos `.env` reales, bases de datos, cachés y compilaciones generadas. Se incluyen ambos `.env.example`, el seed, las imágenes y el archivo de versiones de pnpm. El video se comparte mediante enlace y no se incorpora al ZIP.
 
-Antes de entregar, completar el enlace del video al comienzo de este README y comprobar que tanto el video como el repositorio permiten acceso público.
+Antes de entregar, comprobar que tanto el video como el repositorio permiten acceso público.
