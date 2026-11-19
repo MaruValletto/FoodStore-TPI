@@ -175,19 +175,3 @@ Para repetir las pruebas de aceptación en una base SQLite temporal, desde `back
 La prueba temporal no modifica la base configurada en `.env`. El soporte opcional para PostgreSQL en ese archivo de pruebas exige un esquema temporal identificado como `test_tpi_`; no debe apuntarse a una base con datos personales.
 
 Desde `frontend`, `pnpm.cmd test` ejecuta ocho pruebas autónomas. Las dos pruebas de integración se omiten salvo que se configure expresamente una API de pruebas con `RUN_LIVE_API=1` y `VITE_API_URL`; crean registros y pedidos y deben usarse en una base descartable.
-
-### Recorrido manual antes de presentar
-
-1. Registrarse como cliente, ingresar, buscar un producto y filtrar por categoría.
-2. Agregar al carrito, modificar la cantidad y recargar para comprobar la persistencia.
-3. Confirmar una compra; comprobar el detalle en Mis pedidos y el descuento de stock.
-4. Cancelar el pedido pendiente; comprobar que el stock vuelve al valor previo y no se permite otra cancelación.
-5. Ingresar como administrador; crear, editar y dar de baja una categoría y un producto de prueba. Modificar stock y disponibilidad.
-6. Crear otro pedido y avanzar desde Pendiente a En preparación y Entregado; comprobar el resumen.
-7. Desactivar y reactivar al cliente; comprobar la restricción de acceso y los mensajes de la aplicación.
-
-## Entrega
-
-Un único ZIP debe contener `README.md`, `backend/` y `frontend/`. Se excluyen `.venv`, `node_modules`, archivos `.env` reales, bases de datos, cachés y compilaciones generadas. Se incluyen ambos `.env.example`, el seed, las imágenes y el archivo de versiones de pnpm. El video se comparte mediante enlace y no se incorpora al ZIP.
-
-Antes de entregar, comprobar que tanto el video como el repositorio permiten acceso público.
